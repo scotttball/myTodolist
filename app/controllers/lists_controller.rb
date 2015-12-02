@@ -35,9 +35,9 @@ class ListsController < ApplicationController
     end
   end
   
-  def destory
+  def destroy
     @list = List.find(params[:id])
-    @list.destory
+    @list.destroy
     redirect_to lists_path
   end
 

@@ -1,0 +1,13 @@
+<h1>Edit Action</h1>
+<%= form_for @list do |f| %>
+  <%= f.label :action %>
+  <%= f.text_field :action %><br /><br />
+  
+  <%= f.label :details %>
+  <%= f.text_area :details %><br /><br />
+  
+  <%= f.label :author %>
+  <%= f.text_field :author %><br /><br />
+
+  <%= f.submit 'Submit Action' %>
+<% end %>
