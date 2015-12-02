@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :lists
+
+  get 'lists/action'
+
+  get 'lists/details'
+
+  get 'lists/author'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
