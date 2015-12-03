@@ -2,7 +2,7 @@
 <p><%= link_to 'New Action', new_list_path %></p>
 <ul>
 <% @lists.each do |list| %>
-  <li><%= list.action %></li>
+  <li><%= list.action %>: <%= list.status ? "Completed" : "Not Completed" %></li>
   <%= link_to 'Show Action', list_path(list) %> | <%= link_to 'Edit Action', edit_list_path(list) %> | <%= link_to 'Delete Action', list_path(list), method: :delete %>
 <% end %>
 </ul>
